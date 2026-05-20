@@ -297,7 +297,6 @@ public class MainFrameUI extends javax.swing.JFrame {
         jTextField6.setBackground(new java.awt.Color(255, 255, 0));
         jTextField6.addActionListener(this::jTextField6ActionPerformed);
 
-        jTextField7.setEditable(false);
         jTextField7.setBackground(new java.awt.Color(204, 204, 204));
         jTextField7.addActionListener(this::jTextField7ActionPerformed);
 
@@ -315,41 +314,45 @@ public class MainFrameUI extends javax.swing.JFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(56, 56, 56)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 185, Short.MAX_VALUE)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(56, 56, 56)
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel4Layout.createSequentialGroup()
-                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 185, Short.MAX_VALUE)
+                                .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel4Layout.createSequentialGroup()
-                                        .addComponent(jButton8)
-                                        .addGap(88, 88, 88))
-                                    .addGroup(jPanel4Layout.createSequentialGroup()
-                                        .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGap(16, 16, 16))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
-                                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                                    .addGroup(jPanel4Layout.createSequentialGroup()
-                                        .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGap(78, 78, 78)))
-                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField4)
-                                    .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 307, Short.MAX_VALUE)))
-                            .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                                .addComponent(jButton8)
+                                                .addGap(88, 88, 88))
+                                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addGap(16, 16, 16))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel4Layout.createSequentialGroup()
+                                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                                .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addGap(78, 78, 78)))
+                                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(jTextField4)
+                                            .addComponent(jTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 307, Short.MAX_VALUE)))
+                                    .addComponent(jLabel19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 495, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(178, 178, 178))
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(278, 278, 278))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -385,9 +388,9 @@ public class MainFrameUI extends javax.swing.JFrame {
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addComponent(jButton9)
-                .addGap(32, 32, 32)
-                .addComponent(jLabel10)
-                .addGap(68, 68, 68))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(53, 53, 53))
         );
 
         jTabbedPane1.addTab("", jPanel4);
@@ -835,27 +838,47 @@ public class MainFrameUI extends javax.swing.JFrame {
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:(update loan accout details)
-        String sqlquery = "UPDATE loan_acc_tb SET MEMBER_ID = ?, DESCRYPTION = ? WHERE LOAN_ACC_ID = ?";
         String loan_acc_id = jTextField4.getText();
         String member_id = jTextField5.getText();
         String remarks = jTextArea3.getText();
+        String new_intrduser_loan_id = jTextField7.getText();
+        
         if (!MemberIdValidity(member_id))
         {
             jLabel10.setText("Enter Valid Member Id");
             return;
         }
-
+        
+        if (!new_intrduser_loan_id.equals(old_intrduser_loan_id))
+        {
+            // check for loan_acc_id -> it should not have child
+            
+            if (loanACCas_SUBloan(loan_acc_id)) {
+                jLabel10.setText("Loan Account has sub loan accounts");
+               return; 
+            }
+            int sub_id = CheckIntraduserStatus(new_intrduser_loan_id);
+            if (sub_id == 0) {
+                jLabel10.setText("Intraduser Loan Account is not valid or already has 3 intradusers");
+                return;
+            }
+            UpdateOldIntraduser(old_intrduser_loan_id,loan_acc_id);
+            UpdateIntraduserLoanAcc(new_intrduser_loan_id,loan_acc_id,sub_id);
+        }
+        String sqlquery = "UPDATE loan_acc_tb SET MEMBER_ID = ?, INT_LOAN_ACC_ID = ?, DESCRYPTION = ? WHERE LOAN_ACC_ID = ?";
+                
         // Try-with-resources automatically closes resources
         try (Connection conn = DriverManager.getConnection(DBAccessCode.g_url, DBAccessCode.g_user, DBAccessCode.g_password);
             PreparedStatement pstmt = conn.prepareStatement(sqlquery)) {
 
             // Bind values to placeholders
             pstmt.setString(1, member_id);
-            pstmt.setString(2, remarks);
-            pstmt.setString(3, loan_acc_id);
+            pstmt.setString(2, new_intrduser_loan_id);
+            pstmt.setString(3, remarks);
+            pstmt.setString(4, loan_acc_id);
             // Execute the update
             int rowsAffected = pstmt.executeUpdate();
-            System.out.println("Rows updated: " + rowsAffected);
+            System.out.println("loan a/c updated for new ingtraduser" + rowsAffected);
             jLabel10.setText("Record Updated Successfully");
 
         } catch (SQLException e) {
@@ -880,6 +903,7 @@ public class MainFrameUI extends javax.swing.JFrame {
             if (rs.next()) {
                 String member_id = rs.getString("MEMBER_ID");
                 String intrduser_loan_id = rs.getString("INT_LOAN_ACC_ID");
+                old_intrduser_loan_id = intrduser_loan_id;
                 String amt = rs.getString("AMOUNT");
                 String remarks = rs.getString("DESCRYPTION");
 
@@ -1252,6 +1276,7 @@ public class MainFrameUI extends javax.swing.JFrame {
     private String g_MemberID;
     private String g_loan_acc_no;
     private String g_remarks;
+    private String old_intrduser_loan_id;
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -1403,7 +1428,7 @@ public class MainFrameUI extends javax.swing.JFrame {
             pstmt.setString(2, interduser_loan_acc_id); 
             // Execute the update
             int rowsAffected = pstmt.executeUpdate();
-            System.out.println("Interduser accout Rows updated: " + rowsAffected);
+            System.out.println("Interduser accout sub1, sub2 or sub3 updated: " + rowsAffected);
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -1597,7 +1622,83 @@ public class MainFrameUI extends javax.swing.JFrame {
 
         } catch (SQLException e) {
             e.printStackTrace();
+        }       
+    }
+
+    private void UpdateOldIntraduser(String old_intrduser_loan_id, String loan_acc_id) {
+        
+        String lc_sub1 = "",lc_sub2 = "",lc_sub3 = "";
+        int sub_ln_id_i = 0;
+        String sqlquery = "SELECT SUB_LOAN_ACC_ID1, SUB_LOAN_ACC_ID2, SUB_LOAN_ACC_ID3 FROM loan_acc_tb WHERE LOAN_ACC_ID = '" + old_intrduser_loan_id +"'";
+        
+        try (Connection conn = DriverManager.getConnection(DBAccessCode.g_url, DBAccessCode.g_user, DBAccessCode.g_password);
+             Statement stmt = conn.createStatement()) 
+        {
+            //System.out.println("Connected to the database successfully!");
+            ResultSet rs = stmt.executeQuery(sqlquery);
+            // Step 4: Process the result set
+            if (rs.next()) {
+                System.out.println("old loan account  found!!!" ); 
+                lc_sub1 = rs.getString("SUB_LOAN_ACC_ID1");
+                lc_sub2 = rs.getString("SUB_LOAN_ACC_ID2");
+                lc_sub3 = rs.getString("SUB_LOAN_ACC_ID3");
+                
+                if (lc_sub1.equals(loan_acc_id)) {
+                    lc_sub1 = lc_sub2;
+                    lc_sub2 = lc_sub3;
+                    lc_sub3 = "";
+                }   else if (lc_sub2.equals(loan_acc_id)){                    
+                    lc_sub2 = lc_sub3;
+                    lc_sub3 = "";
+                }   else if (lc_sub3.equals(loan_acc_id))
+                    lc_sub3 = "";
+                else 
+                   System.out.println("loan account not found!!!" );                
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
-       
+        //find 1,2 or 3 for loan_acc_id in old_intrduser_loan_id
+        sqlquery = "UPDATE loan_acc_tb SET SUB_LOAN_ACC_ID1 = ?, SUB_LOAN_ACC_ID2 = ?, SUB_LOAN_ACC_ID3 = ? WHERE LOAN_ACC_ID = ?";
+        // Try-with-resources automatically closes resources
+        try (Connection conn = DriverManager.getConnection(DBAccessCode.g_url, DBAccessCode.g_user, DBAccessCode.g_password);
+             PreparedStatement pstmt = conn.prepareStatement(sqlquery)) {
+            // Bind values to placeholders
+
+            pstmt.setString(1, lc_sub1);
+            pstmt.setString(2, lc_sub2);
+            pstmt.setString(3, lc_sub3);
+            pstmt.setString(4, old_intrduser_loan_id); 
+            System.out.println( pstmt.toString());
+            // Execute the update
+            int rowsAffected = pstmt.executeUpdate();
+            System.out.println("Old loan accout updated " + rowsAffected);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private boolean loanACCas_SUBloan(String loan_acc_id) {
+        String sqlquery = "SELECT SUB_LOAN_ACC_ID1, SUB_LOAN_ACC_ID2, SUB_LOAN_ACC_ID3 FROM loan_acc_tb WHERE LOAN_ACC_ID = '" + loan_acc_id +"'";
+        boolean retval = true;
+        try (Connection conn = DriverManager.getConnection(DBAccessCode.g_url, DBAccessCode.g_user, DBAccessCode.g_password);
+             Statement stmt = conn.createStatement()) 
+        {
+            //System.out.println("Connected to the database successfully!");
+            ResultSet rs = stmt.executeQuery(sqlquery);
+            // Step 4: Process the result set
+            if (rs.next()) {
+                String lc_sub1 = rs.getString("SUB_LOAN_ACC_ID1");
+                String lc_sub2 = rs.getString("SUB_LOAN_ACC_ID2");
+                String lc_sub3 = rs.getString("SUB_LOAN_ACC_ID3");
+                if (lc_sub1.isEmpty()) {
+                    retval = false;
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return retval;
     }
 }
