@@ -1218,29 +1218,27 @@ public class MainFrameUI extends javax.swing.JFrame {
         Iterator<ArrayList> root_iter    = DBAccessCode.root_list.iterator();
 
         while (root_iter.hasNext()) {
-
             ArrayList<Node> level_list;
             level_list = root_iter.next();
-
             Iterator<Node> level_iter    = level_list.iterator();                
 
             while (level_iter.hasNext()) {
-                Node n = level_iter.next();
-                DefaultMutableTreeNode mn = tree_node_list.getFirst();
-                if (n.int_loan_acc_id.equals(mn.toString())) {
-                    DefaultMutableTreeNode newNode = new DefaultMutableTreeNode(n.loan_acc_id);
-                    mn.add(newNode);
-                    tree_node_list.add(newNode);
-                    System.out.println(mn.toString());
-                } else {
+                Node n = level_iter.next();                
+//loop needed  till treenode list endsfor next level
+                while (!tree_node_list.isEmpty()) {
+                    DefaultMutableTreeNode mn = tree_node_list.getFirst();
+                    if (n.int_loan_acc_id.equals(mn.toString())) {
+                        System.out.println("Check for boss " + n.int_loan_acc_id);    
+                        DefaultMutableTreeNode newNode = new DefaultMutableTreeNode(n.loan_acc_id);
+                        mn.add(newNode);
+                        tree_node_list.add(newNode);
+                        System.out.println(mn.toString());
+                        break;
+                    } else {
                         tree_node_list.removeFirst();
-                        if (!tree_node_list.isEmpty()) {
-                            mn = tree_node_list.getFirst();
-                            DefaultMutableTreeNode newNode = new DefaultMutableTreeNode(n.loan_acc_id);
-                            mn.add(newNode);
-                            tree_node_list.add(newNode);
-                        }
-                }                
+                    }
+                }
+    //loop ends            
             }
             tree_node_list.removeFirst();
         }
@@ -1681,7 +1679,7 @@ public class MainFrameUI extends javax.swing.JFrame {
 
     private boolean loanACCas_SUBloan(String loan_acc_id) {
         String sqlquery = "SELECT SUB_LOAN_ACC_ID1, SUB_LOAN_ACC_ID2, SUB_LOAN_ACC_ID3 FROM loan_acc_tb WHERE LOAN_ACC_ID = '" + loan_acc_id +"'";
-        boolean retval = true;
+        boolean retval = false;
         try (Connection conn = DriverManager.getConnection(DBAccessCode.g_url, DBAccessCode.g_user, DBAccessCode.g_password);
              Statement stmt = conn.createStatement()) 
         {
